@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Admission Form</title>
+</head>
+
+<body>
+    <h1>University Admission Form</h1>
+
+    <form>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <table>
+
+                <tr>
+                    <td>Full Name</td>
+                    <td><input type="text" maxlength="50" required></td>
+                </tr>
+
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" required></td>
+                </tr>
+
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gender" value="male" required> Male
+                        <input type="radio" name="gender" value="female"> Female
+                        <input type="radio" name="gender" value="others" required> Others
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Date of Birth</td>
+                    <td><input type="date" required></td>
+                </tr>
+
+            </table>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Academic Information</legend>
+
+            <table>
+
+                <tr>
+                    <td>Preferred Department</td>
+                    <td>
+                        <select required>
+                            <option value="">Select Department</option>
+                            <option value="cse">CSE</option>
+                            <option value="eee">EEE</option>
+                            <option value="bba">BBA</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Interests</td>
+                    <td>
+                        <input type="checkbox" value="sports"> Sports
+                        <input type="checkbox" value="music"> Music
+                        <input type="checkbox" value="coding"> Coding
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Upload Transcript</td>
+                    <td><input type="file" required></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="submit" value="Submit">
+                    </td>
+                    <td>
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+
+            </table>
+
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
